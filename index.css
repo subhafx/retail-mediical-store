@@ -1,0 +1,160 @@
+/* Banner */
+.banner {
+    height: 400px;
+    background-image: url("banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-img-top {
+    border-radius: 0.5rem;
+}
+
+.badge {
+    font-size: 0.9rem;
+}
+
+/* Department Colors */
+.card-body span {
+    font-weight: bold;
+}
+
+.card-body small.text-muted {
+    color: #757575;
+}
+
+.card-body.small-department span {
+    background-color: #673ab7;
+}
+
+.card-body.small-department small.text-muted {
+    color: #9e9e9e;
+}
+
+/* Timings List Styles */
+.card-body ul {
+    padding-left: 0;
+}
+
+.card-body ul li {
+    list-style: none;
+}
+
+.card-body ul li:before {
+    content: '\2022';
+    color: #2196f3;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+@media (max-width: 767px) {
+    /* Small Department Styles */
+    .card-body.small-department span {
+        background-color: #2196f3;
+    }
+}
+
+.card-title span {
+    font-size: 14px;
+}
+
+.card-title i {
+    font-size: 20px;
+    color: #0d6efd;
+}
+
+.card-text small {
+    font-size: 12px;
+}
+
+.table th,
+.table td {
+    padding: 0.25rem;
+    font-size: 12px;
+}
+
+.table th:first-child,
+.table td:first-child {
+    width: 50px;
+    font-weight: normal;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+    width: 80px;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+    width: 80px;
+}
+
+.fa-user-md,
+.fa-clock {
+    color: #0d6efd;
+}
+
+
+
+
+/* Custom Header Styles */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+
